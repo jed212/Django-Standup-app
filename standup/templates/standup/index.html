@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <ol id ="navigation">
+        {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+        {% endfor %}
+    </ol>
+
+{% block content %}
+    <h2>standup</h2>
+    <h3><p>Add your updates here</p></h3>
+    <form method="post">
+        {{standup}}
+        <button type="submit">Login</button>
+    </form>
+{% endblock content %}
+</body>
+</html>
