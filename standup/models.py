@@ -11,4 +11,3 @@ class standup(models.Model):
 class comments(models.Model):
     thoughts = models.CharField(max_length = 500)
     recommendations = models.CharField(max_length = 500)
-# Create your models here.
